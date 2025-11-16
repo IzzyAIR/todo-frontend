@@ -28,7 +28,12 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
             <span className="font-semibold text-gray-800">{task.username}</span>
             {task.completed && (
               <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-                ✓ Выполнено
+                Выполнено
+              </span>
+            )}
+            {task.edited_by_admin && (
+              <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                Отредактировано администратором
               </span>
             )}
           </div>

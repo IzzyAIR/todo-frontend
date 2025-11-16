@@ -4,6 +4,7 @@ export interface Task {
   email: string;
   text: string;
   completed: boolean;
+  edited_by_admin: boolean;
   createdAt: string;
   updatedAt: string;
 }
